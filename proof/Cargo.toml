@@ -1,0 +1,42 @@
+[package]
+name = "solvency-proof"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+#halo2 = { git = "https://github.com/zcash/halo2.git", branch = "main" }
+#halo2_proofs = { version = "0.2.0" }
+#halo2_gadgets = { version = "0.2.0" }
+#halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v2022_09_10" }
+#halo2_gadgets = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v2022_09_10" }
+
+halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v2023_02_02" }
+#halo2_gadgets = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v2023_02_02" }
+halo2curves = { git = 'https://github.com/privacy-scaling-explorations/halo2curves', tag = '0.3.0' }
+
+halo2_gadgets = { path = "../gadgets" }
+
+#goldilocks-ntt = { git = 'https://github.com/recmo/goldilocks-ntt.git'}
+#goldilock-nt = { path = "../goldilocks-ntt" }
+
+rs_merkle = { path = "../rs-merkle" }
+micromath = "2.0.0"
+rand = "0.8"
+ff_ce = "0.14"
+group = "0.13"
+ethers-core = "1.0.2"
+ethers-signers = "1.0.2"
+serde = "1.0"
+fnv = "1.0"
+bincode = "2.0.0-rc.1"
+rayon = "1.0.3"
+num = "0.4.0"
+#merkletree = "0.22.1"
+#rs_merkle = "1.2"
+typenum = "1.11.2"
+lazy_static = "1.4"
+anyhow = "1.0"
+rand_xorshift = "0.3.0"
